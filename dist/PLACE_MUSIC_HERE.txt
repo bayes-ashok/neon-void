@@ -1,3 +1,0 @@
-Place your music.mp3 file in this directory (public/).
-
-The audio engine will load it from: /music.mp3
