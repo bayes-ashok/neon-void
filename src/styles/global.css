@@ -1,0 +1,30 @@
+/* ── Global reset & base ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --neon-pink: #ff00ff;
+  --neon-blue: #00ffff;
+  --bg-dark: #0a0a0a;
+  --font-display: 'Orbitron', sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-dark);
+  font-family: var(--font-display);
+  color: #fff;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}

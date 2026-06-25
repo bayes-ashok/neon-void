@@ -1,0 +1,31 @@
+.disco {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.bgLayer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #120033, #220022, #001122);
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* White strobe flash overlay — opacity toggled by useDiscoCanvas */
+.flashOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: #fff;
+  z-index: 10;
+  /* Instant on, fast off — transition handled in JS for precision */
+  transition: opacity 0s;
+}
